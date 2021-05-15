@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>todo-js</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/styles.css" />
-  </head>
 
-  <body>
-    <div class="input-area">
-      <input type="text" placeholder="TODOを入力" />
-      <button>追加</button>
-    </div>
-    <div class="incomplete-area">
-      <p class="title">未完了のTODO</p>
-      <ul>
-        <li>
-          <div class="list-row">
-            <p>TODOです</p>
-            <button>完了</button>
-            <button>削除</button>
-          </div>
-        </li>
-        <li>
-          <div class="list-row">
-            <p>TODOです</p>
-            <button>完了</button>
-            <button>削除</button>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="complete-area">
-      <p class="title">完了したTODO</p>
-      <ul>
-        <li>
-          <div class="list-row">
-            <p>TODOでした</p>
-            <button>戻す</button>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <script src="src/index.js"></script>
-  </body>
+<head>
+  <title>todo-js</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/reset.css">
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+
+<body>
+  <div class="input-area">
+    <input type="text" placeholder="TODOを入力" id="addText" />
+    <button id="addButton">追加</button>
+  </div>
+  <div class="incomplete-area">
+    <p class="title">未完了のTODO</p>
+    <ul id="incompleteList">
+      <li>
+        <div class="list-row">
+          <p>TODOです</p>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+      </li>
+      <li>
+        <div class="list-row">
+          <p>TODOです</p>
+          <button>完了</button>
+          <button>削除</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="complete-area">
+    <p class="title">完了したTODO</p>
+    <ul>
+      <li>
+        <div class="list-row">
+          <p>TODOでした</p>
+          <button>戻す</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
